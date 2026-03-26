@@ -1,12 +1,16 @@
 # CI/CD Pipeline for Containerized 2048 Game
 
-![Architecture Diagram Placeholder](images/architecture-diagram.png)
+<p align="center">
+  <img src="https://i.gyazo.com/47520aed3377883e37d6555e020dfa15.png" alt="Diagram" width="700">
+  <br>
+  <sub>Figure 1: Architecture Diagram</sub>
+</p>
 
 ## Overview
 This project demonstrates a fully automated CI/CD pipeline for deploying a Dockerized version of the 2048 game using AWS. The pipeline builds, tests, and deploys the application to ECS Fargate, reducing manual intervention and ensuring consistent, scalable releases. It showcases best practices for DevOps, containerization, and serverless deployment.
 
 ## Problem Statement
-Manual deployment of containerized applications is error-prone, slow, and difficult to scale. Without automation, updates require repetitive manual steps that can introduce configuration errors, downtime, and inconsistent environments. The challenge was to create a reliable pipeline that automates builds, image registry management, and production deployment securely.
+Manual deployment of containerized applications is error-prone, slow, and difficult to scale. Without automation, updates require repetitive manual steps that can introduce configuration errors, downtime, and inconsistent environments. The challenge was to create a reliable pipeline that automates builds, manages image registries, and securely deploys to production.
 
 ## Solution
 - AWS CodePipeline orchestrates the pipeline stages (build, test, deploy).  
@@ -15,7 +19,14 @@ Manual deployment of containerized applications is error-prone, slow, and diffic
 - IAM Roles enforce secure access between services.  
 - The result is a fully automated, repeatable, and scalable CI/CD workflow.
 
-![Workflow / Implementation Placeholder](images/workflow.png)
+<p align="center">
+  <img src="https://i.gyazo.com/7ddd3f607e453733e56a31195a96b32d.png" alt="Pipeline" width="700">
+  <img src="https://i.gyazo.com/15b4e50c8f7d1113823cc68611c67255.png" alt="Source" width="700">
+  <img src="https://i.gyazo.com/0e0b66859c4130c3f0e9be1a355e0a86.png" alt="Build" width="700">
+  <img src="https://i.gyazo.com/e4b6bb040d712b681b8a28012dab6f71.png" alt="Deploy" width="700">
+  <br>
+  <sub>Figure 2: Codepipeline</sub>
+</p>  
 
 ## Steps to be Performed 👩‍💻
 1. Set Up ECS Cluster and ECR Repository  
@@ -31,7 +42,12 @@ Manual deployment of containerized applications is error-prone, slow, and diffic
 - IAM Roles & Policies: Secure access across services [Security]  
 
 ## Results
-![Application Screenshot Placeholder](images/results.png)  
+
+<p align="center">
+  <img src="https://i.gyazo.com/9b45cb485eb1a7378b9b4ff5bf71532b.png" alt="Application" width="700">
+  <br>
+  <sub>Figure 3: Application</sub>
+</p>  
 
 ## Future Improvements
 - Add automated unit and integration tests in the pipeline  
